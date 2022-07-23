@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigationDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:appbarColor="@color/teal_200">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottonNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottonNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp"
+
+            app:elevation="50dp"
+            app:itemIconTint="@color/teal_200"
+            app:itemRippleColor="#2196F3"
+            app:itemTextColor="#009688"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav" >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer>
